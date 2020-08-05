@@ -11,7 +11,7 @@ Sample microservice architecture using
     <li>Ribbon client for load balancing</li>
 </ul>
 
-#Services
+# Services
 <ul>
     <li>Eureka - Acts as registry for all the services. Used as a lookup registry by other services to find any service they need.</li>
     <li>Zuul - Acts as the client facing endpoint, responsible for routing request to appropriate services. It also authenticate the user if valid JWT token is present.</li>
