@@ -11,7 +11,7 @@ Sample microservice architecture using
     <li>Ribbon client for load balancing</li>
 </ul>
 
-# Services
+## Services
 <ul>
     <li>Eureka - Acts as registry for all the services. Used as a lookup registry by other services to find any service they need.</li>
     <li>Zuul - Acts as the client facing endpoint, responsible for routing request to appropriate services. It also authenticate the user if valid JWT token is present.</li>
@@ -20,16 +20,22 @@ Sample microservice architecture using
     <li>Auth Server - A sample authorisation server which authenticate users using Spring Security configuration, generate JWT and return response with JWT token in the response header.</li>
 </ul>
 
-# Build all services
-Run the command from project root directory
-<code>./mvnw clean package</code>
+## Build all services
+Run the below command from project root directory
+```
+./mvnw clean package
+```
 
-# Starting all services
-Run the command from project root directory
-<code>./start-all.sh</code>
+## Starting all services
+Run the below command from project root directory
+```shell script
+./start-all.sh
+```
 
 A log folder will be created inside project root directory with log files for each service
 
-# Stopping all services
-Run the command from project root directory
-<code>./stop-all.sh</code>
+## Stopping all services
+Run the below command from project root directory
+```shell script
+./stop-all.sh
+```
